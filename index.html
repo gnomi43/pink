@@ -5,18 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>pink</title>
+    <title>PINK</title>
 </head>
 
 <body>
-    <header>
-
-
+    <header class="page-header">
+        <nav class="header-nav">
+            <div class="page-header__logo-wrapper">
+                <img src="http://placehold.it/150x100" alt="Логотип компании" class="page-header__logo-image">
+            </div>
+            <ul class="header-nav__list site-list">
+                <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+                <li class="site-list__item"><a href="#">Фотографии</a></li>
+                <li class="site-list__item"><a href="#">Конкурс</a></li>
+                <li class="site-list__item"><a href="#">Html Academy</a></li>
+            </ul>
+            <ul class="header-nav__list menu-list">
+                <li class="menu-list__item">
+                    <button class="menu-list__full-menu" type="button">Бургер</button>                    
+                </li>
+                <li class="menu-list__item menu-list__item--active">
+                    <button class="menu-list__full-menu" type="button">Закрыть</button>                    
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
 
+    <main class="content">
+        <section class="application">
+            <h1 class="vissualy-hidden">Приложение для смартфонов</h1>
+            <div class="application-wrapper">
+                <a href="#" class="buttom application__down">Скачать Приложение</a>
+                <ul class="application__os-list">
+                    <li class="os-list__item os-list__item-ios"><a href="#"></a></li>
+                    <li class="os-list__item os-list__item-android"><a href="#"></a></li>
+                    <li class="os-list__item os-list__item--winos"><a href="#"></a></li>
+                </ul>
+                <p class="application-info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+            </div>
+        </section>
+        <section class="suggestion">
+            <h1 class="vissualy-hidden">Возможности Приложение</h1>
+            <ul class="suggestion__quest-ans-list">
+                <li class="quest-ans-list__item">Устали о серости мегаполиса?</li>
+                <li class="quest-ans-list__item">Нам есть, что вам предложить!</li>
+            </ul>
+        </section>
     </main>
-    <footer>
+    <footer class="footer">
 
     </footer>
 </body>
