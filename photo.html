@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PINK</title>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="header-nav">
+            <div class="page-header__logo-wrapper">
+                <img src="http://placehold.it/150x100" alt="Логотип компании" class="page-header__logo-image">
+            </div>
+            <ul class="header-nav__list site-list">
+                <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+                <li class="site-list__item"><a href="#">Фотографии</a></li>
+                <li class="site-list__item"><a href="#">Конкурс</a></li>
+                <li class="site-list__item"><a href="#">Html Academy</a></li>
+            </ul>
+            <ul class="header-nav__list menu-list">
+                <li class="menu-list__item">
+                    <button class="menu-list__full-menu" type="button">Бургер</button>                    
+                </li>
+                <li class="menu-list__item menu-list__item--active">
+                    <button class="menu-list__full-menu" type="button">Закрыть</button>                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content">
+        <section class="page-content__photo">
+            <div class="page-content__photo-wrapper">
+                <p class="page-content__photo-info">Фотографии пользователей</p>
+            </div>
+
+            <h1 class="vissualy-hidden">Лента пользователей</h1>
+            <p class="page-content__photo-title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+            <ul class="page-content__photo-list">
+                <li class="photo-item">
+                    <img class="photo-item__top-photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Анна<span class="photo-item__info-timeout">(5 минут назад)</span></p>
+                        <p class="photo-item__info-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+                <li class="photo-item">
+                    <img class="photo-item__photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Левон<span class="photo-item__info-timeout">(5 часов назад)</span></p>
+                        <p class="photo-item__info-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+                <li class="photo-item">
+                    <img class="photo-item__photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Антон<span class="photo-item__info-timeout">(12 часов назад)</span></p>
+                        <p class="photo-item__info-text">Соседи будут рады!</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+                <li class="photo-item">
+                    <img class="photo-item__photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Борис<span class="photo-item__info-timeout">(20 часов назад)</span></p>
+                        <p class="photo-item__info-text">Здесь могла быть ваша цитата о высоком и вечном</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+                <li class="photo-item">
+                    <img class="photo-item__photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Сергей<span class="photo-item__info-timeout">(25 часов назад)</span></p>
+                        <p class="photo-item__info-text">Самая кубанская в мире!</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+                <li class="photo-item">
+                    <img class="photo-item__photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Максим<span class="photo-item__info-timeout">(40 часов назад)</span></p>
+                        <p class="photo-item__info-text">Где снег-то?</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+                <li class="photo-item">
+                    <img class="photo-item__photo" src="" alt="фото пользовтеля">
+                    <div class="photo-item__info">
+                        <p class="photo-item__info-name">Надежда<span class="photo-item__info-timeout">(40 часов назад)</span></p>
+                        <p class="photo-item__info-text">Всем GM И взаимные лайки!</p>
+                        <p class="photo-item__info-like">Нравится:</p> 
+                    </div>
+                </li>
+            </ul>
+            <p class="page-content__photo-footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+        </section>
+        <section class="page-content__add-app">
+            <img class="add-app__photo" src="" alt="">
+            <ul class="add-app__photo-list">
+                <il class="photo__item photo__item--active">Обрезка</il>
+                <il class="photo__item photo__item--active">Заливка</il>
+                <il class="photo__item photo__item--active">Коррекция цвета</il>
+            </ul>
+            <input type="range" min="0" max="100" step="5">
+            <div class="add-app__buttons">
+                <button class="buttons__button-cross" type="button">Запостить</button>
+                <button class="buttons__button-cancel" type="button" disabled>Отмена</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <h1 class="vissualy-hidden">Контакты</h1>
+        <div class="page-footer__footer-logo">
+            <img src="" alt="Логотип компании">
+        </div>
+            <div class="page-footer__social">
+                <ul class="page-footer__social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__item-button" href="https://Twitter.com">
+                            <img src="#" alt="Твиттер">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__item-button" href="https://Facebook.com">
+                            <img src="#" alt="Фейсбук">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__item-button" href="https://androidstore.com">
+                            <img src="#" alt="Инстаграмм">
+                            Android store
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="page-footer__copyright">
+                <b>Разработано</b>
+                <a class="page-footer__copyright-button" href="https://htmlacademy.ru"><img src="#" alt="Логотип разработчика"></a>
+            </p>
+    </footer>
+</body>
+</html>
