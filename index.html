@@ -31,7 +31,7 @@
         </nav>
     </header>
 
-    <main class="content">
+    <main class="page-content">
         <section class="application">
             <h1 class="vissualy-hidden">Приложение для смартфонов</h1>
             <div class="application-wrapper">
@@ -44,16 +44,112 @@
                 <p class="application-info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
             </div>
         </section>
+
         <section class="suggestion">
             <h1 class="vissualy-hidden">Возможности Приложение</h1>
-            <ul class="suggestion__quest-ans-list">
-                <li class="quest-ans-list__item">Устали о серости мегаполиса?</li>
-                <li class="quest-ans-list__item">Нам есть, что вам предложить!</li>
+            <ul class="suggestion__title-list">
+                <li class="title-list__item">Устали о серости мегаполиса?</li>
+                <li class="title-list__item">Нам есть, что вам предложить!</li>
             </ul>
+            <ul class="suggestion__possibility-list">
+                <li class="possibility-list__item">
+                    <span class="suggestion__title-item">Поднимает настроение</span>
+                    <p class="suggestion__title-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                </li>
+                <li class="possibility-list__item">
+                    <span class="suggestion__title-item">Меняет мир вокруг</span>
+                    <p class="suggestion__title-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                </li>
+                <li class="possibility-list__item">
+                    <span class="suggestion__title-item">Заводит новых друзей</span>
+                    <p class="suggestion__title-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                </li>
+            </ul>
+            <img class="suggestion__photo" src="http://placehold.it/150x100" alt="Изображение смартфона">   
         </section>
-    </main>
-    <footer class="footer">
 
+        <section class="feedback">
+            <div class="feedback__wrapper slider">
+            <h1 class="vissualy-hidden">Отзывы пользователей</h1>
+            <ul class="feedback__list slider__list">
+                <li class="feedback__item">
+                    <span class="feedback__user-name">Николай Петров</span>
+                    <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+                <li class="feedback__item">
+                    <span class="feedback__user-name">Николай Петров</span>
+                    <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+                <li class="feedback__item">
+                    <span class="feedback__user-name">Николай Петров</span>
+                    <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </li>
+            </ul>
+            <p class="feedback__toggles slider__toggles">
+                <button class="slider__toggle slider__toggle--active" type="button">1</button>
+                <button class="slider__toggle" type="button">2</button>
+                <button class="slider__toggle" type="button">3</button>
+            </p>
+            </div>
+        </section>
+
+        <section class="programs">
+            <div class="programs__wrapper slider">
+            <h1 class="vissualy-hidden">Отзывы пользователей</h1>
+            <ul class="programs__list slider__list">
+                <li class="programs__item">
+                    <table>
+                        <tr>
+                            <span class="programs__version">Стандарт</span>
+                            <span class="programs__price"></span>
+                        </tr>
+                        <tr class="programs__property programs__property--check">Розовый фильтр</tr>
+                        <tr class="programs__property programs__property--check">Смайлики</tr>
+                        <tr class="programs__property programs__property--cross">Комментарии</tr>
+                    </table>
+                </li>
+            </ul>
+            <p class="programs__toggles slider__toggles">
+                <button class="slider__toggle" type="button">1</button>
+                <button class="slider__toggle slider__toggle--active" type="button">2</button>
+                <button class="slider__toggle" type="button">3</button>
+            </p>
+            </div>
+        </section>        
+    </main>
+    <footer class="page-footer">
+        <h1 class="vissualy-hidden">Контакты</h1>
+        <div class="page-footer__info">
+            <p class="info-title">
+                Остались вопросы?<br>
+                Свяжитесь с нами!
+            </p>
+            <div class="page-footer__contacts">
+                <ul class="page-footer__contacts-list">
+                    <li class="contacts-list__item">
+                        <p class="contacts-list__item-title">
+                            Звоните:<br>
+                            <a class="item-title__phone" href="tel:>+78125556666">+7 (812) 555-66-66</a>
+                        </p>
+                    </li>
+                    <li class="contacts-list__item">
+                        <p class="contacts-list__item-title">
+                            Пишите:<br>
+                            <a class="item-title__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                        </p>
+                    </li>
+                    <li class="contacts-list__item">
+                        <p class="contacts-list__item-title">
+                            Приезжайте в гости:<br>
+                            <span class="item-title__adress">ул. Большая Конюшенная, 19/8</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer__map">
+            <!-- <iframe src="" frameborder="0"></iframe> -->
+        </div>
     </footer>
 </body>
 
