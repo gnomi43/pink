@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PINK</title>
+</head>
+<body>
+    <header class="page-header">
+        <nav class="header-nav">
+            <div class="page-header__logo-wrapper">
+                <img src="http://placehold.it/150x100" alt="Логотип компании" class="page-header__logo-image">
+            </div>
+            <ul class="header-nav__list site-list">
+                <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+                <li class="site-list__item"><a href="#">Фотографии</a></li>
+                <li class="site-list__item"><a href="#">Конкурс</a></li>
+                <li class="site-list__item"><a href="#">Html Academy</a></li>
+            </ul>
+            <ul class="header-nav__list menu-list">
+                <li class="menu-list__item">
+                    <button class="menu-list__full-menu" type="button">Бургер</button>                    
+                </li>
+                <li class="menu-list__item menu-list__item--active">
+                    <button class="menu-list__full-menu" type="button">Закрыть</button>                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="page-content">
+        <section class="page-content__event">
+            <div class="page-content__event-wrapper">
+                <p class="page-content__event-info">Конкурс на самое безбашенное путешествие с Пинк</p>
+            </div>
+        </section>
+
+        <section class="page-content__form">
+            <h1 class="vissualy-hidden">Регистрация в конкурсе</h1>
+            <form amethod="GET" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend class="vissualy-hidden">ФИО</legend>
+                    <ul class="page-content__form-list">
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="second-name">Фамилия:</label>
+                            <input class="page-content__form-item__input" 
+                            type="text" name="sname" id="second-name" autocomplete="on" required placeholder="Укажите фамилию *">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="first-name">Имя:</label>
+                            <input class="page-content__form-item__input" 
+                            type="text" name="fname" id="first-name" autocomplete="on" required placeholder="Введите ваше имя *">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="mid-name">Отчество:</label>
+                            <input class="page-content__form-item__input" 
+                            type="text" name="mname" id="mid-name" autocomplete="on" placeholder="Ну и отество тоже">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="page-content__form-radio-title">Ваши безбашенные<br> достижения в путешествии</legend>
+                    <ul class="page-content__form-list">
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-selfi">Сделал селфи с акулой</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="selfi" id="checkbox-selfi">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-beach">Обгорел на пляже</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="beach" id="checkbox-beach">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-chuck">Видел Чака Норриса</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="chuck" id="checkbox-chuck">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-souvenir">Накупил сувениров</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="souvenir" id="checkbox-souvenir">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-tower">Удержал башню</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="tower" id="checkbox-tower">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-hotel">Разгромил отель</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="hotel" id="checkbox-hotel">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="vissualy-hidden">Контакты пользователя</legend>
+                    <ul class="page-content__form-list">
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="phone-number">Номер телефона</label>
+                            <input class="page-content__form-item__input" 
+                            type="tel" name="phone" id="phone-number" autocomplete="on" placeholder="Номер, пожалуйста">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="email-adres">Адрес почты</label>
+                            <input class="page-content__form-item__input" 
+                            type="email" name="email" id="email-adres" autocomplete="on" required placeholder="Введите почту *">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="page-content__form-radio-title">С каким приложением<br> путешествовали?</legend>
+                    <ul class="page-content__form-list">
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-iOS">Pink для iOS</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="iOS" id="checkbox-iOS">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-Android">Pink для Android</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="Android" id="checkbox-Android">
+                        </li>
+                        <li class="page-content__form-item">
+                            <label class="page-content__form-item__label" for="checkbox-WindowsOS">Windows Phone</label>
+                            <input class="vissualy-hidden page-content__form-item__input" 
+                            type="radio" name="WindowsOS" id="checkbox-WindowsOS">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="page-content__form-radio-title">Опишите свои эмоции</legend>
+                        <textarea name="about-trip" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                </fieldset>
+
+                <button class="button page-content__form-submit" type="submit">Отправить форму</button>
+
+                <span class="page-content__form-bottom-info">* - Обязательные поля</span>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <h1 class="vissualy-hidden">Контакты</h1>
+        <div class="page-footer__footer-logo">
+            <img src="" alt="Логотип компании">
+        </div>
+            <div class="page-footer__social">
+                <ul class="page-footer__social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__item-button" href="https://Twitter.com">
+                            <img src="#" alt="Твиттер">
+                            Twitter
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__item-button" href="https://Facebook.com">
+                            <img src="#" alt="Фейсбук">
+                            Facebook
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__item-button" href="https://androidstore.com">
+                            <img src="#" alt="Инстаграмм">
+                            Android store
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="page-footer__copyright">
+                <b>Разработано</b>
+                <a class="page-footer__copyright-button" href="https://htmlacademy.ru"><img src="#" alt="Логотип разработчика"></a>
+            </p>
+    </footer>
+
+    <section class="modal modal-success">
+        <div class="modal-success__info">
+            <p class="modal-success__info-title">Ваша заявка отправлена</p>
+            <p class="modal-success__info-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
+                оповестим вас.</p>
+        </div>
+        <div class="modal-success__footer">
+            <button class="button modal-success__footer-button" type="button">Закрыть окно</button>
+        </div>
+    </section>
+
+
+    <section class="modal modal-fail">
+        <div class="modal-fail">
+            <p class="modal-fail__info-title"></p>
+            <p class="modal-fail__info-text"></p>
+        </div>
+        <button class="button modal-success__footer-button" type="button">Закрыть окно</button>
+    </section>
+
+
+
+</body>
+</html>
