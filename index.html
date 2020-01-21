@@ -5,34 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./source/css/style.css">
     <title>PINK</title>
 </head>
 
 <body>
     <header class="page-header">
         <nav class="header-nav">
-            <div class="page-header__logo-wrapper">
-                <img src="http://placehold.it/150x100" alt="Логотип компании" class="page-header__logo-image">
+            <div class="header-nav_wrapper">
+                <img src="./source/dist/logotype-white-mobile.svg копия.png" alt="Логотип компании" class="page-header__logo-image" width="75" height="22">
+            
+                <div class="burger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn-burger" for="menu__toggle">
+                      <span></span>
+                    </label>
+
+                <ul class="header-nav__list site-list">
+                    <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
+                    <li class="site-list__item"><a href="#">Фотографии</a></li>
+                    <li class="site-list__item"><a href="#">Конкурс</a></li>
+                    <li class="site-list__item"><a href="#">Html Academy</a></li>
+                </ul>
             </div>
-            <ul class="header-nav__list site-list">
-                <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-                <li class="site-list__item"><a href="#">Фотографии</a></li>
-                <li class="site-list__item"><a href="#">Конкурс</a></li>
-                <li class="site-list__item"><a href="#">Html Academy</a></li>
-            </ul>
-            <ul class="header-nav__list menu-list">
-                <li class="menu-list__item">
-                    <button class="menu-list__full-menu" type="button">Бургер</button>                    
-                </li>
-                <li class="menu-list__item menu-list__item--active">
-                    <button class="menu-list__full-menu" type="button">Закрыть</button>                    
-                </li>
-            </ul>
         </nav>
     </header>
 
     <main class="page-content">
-        <section class="application">
+        <section class="page-content application">
             <h1 class="vissualy-hidden">Приложение для смартфонов</h1>
             <div class="application-wrapper">
                 <a href="#" class="buttom application__down">Скачать Приложение</a>
@@ -45,7 +45,7 @@
             </div>
         </section>
 
-        <section class="suggestion">
+        <section class="page-content suggestion">
             <h1 class="vissualy-hidden">Возможности Приложение</h1>
             <ul class="suggestion__title-list">
                 <li class="title-list__item">Устали о серости мегаполиса?</li>
@@ -68,7 +68,7 @@
             <img class="suggestion__photo" src="http://placehold.it/150x100" alt="Изображение смартфона">   
         </section>
 
-        <section class="feedback">
+        <section class="page-content feedback">
             <div class="feedback__wrapper slider">
             <h1 class="vissualy-hidden">Отзывы пользователей</h1>
             <ul class="feedback__list slider__list">
@@ -93,7 +93,7 @@
             </div>
         </section>
 
-        <section class="programs">
+        <section class="page-content programs">
             <div class="programs__wrapper slider">
             <h1 class="vissualy-hidden">Отзывы пользователей</h1>
             <ul class="programs__list slider__list">
