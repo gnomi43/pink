@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./source/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>PINK</title>
 </head>
 
@@ -14,7 +15,7 @@
         <nav class="header-nav">
             <div class="header-nav_wrapper">
                 <img src="./source/dist/logotype-white-mobile.svg копия.png" alt="Логотип компании" class="page-header__logo-image" width="75" height="24">
-            
+                
                 <div class="burger-menu">
                     <input class="visually-hidden" id="menu__toggle" type="checkbox" />
                     <label class="menu__btn-burger" for="menu__toggle">
@@ -33,8 +34,8 @@
 
     <main class="page-content">
         <section class="page-content application">
-            <h1 class="visually-hidden">Приложение для смартфонов</h1>
-            <div class="application-wrapper">
+            <h1 class="visually-hidden">Укрась жизнь Pink</h1>
+            <h2 class="visually-hidden">Приложение для смартфонов</h2>
                 <a href="#" class="buttom application__down">Скачать Приложение</a>
                 <ul class="application__os-list">
                     <li class="os-list__item"><a href="https://www.apple.com/ios/ios-13/"><img src="./source/dist/Apple.svg" alt="Приложение для iOS" height="47" width="55"></a></li>
@@ -42,90 +43,149 @@
                     <li class="os-list__item"><a href="https://www.microsoft.com/ru-ru/"><img src="./source/dist/Microsoft.svg" alt="приложение для Microsoft" height="47" width="55"></a></li>
                 </ul>
                 <p class="application__info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
-            </div>
         </section>
-
-        <section class="page-content suggestion">
-            <h1 class="visually-hidden">Возможности Приложение</h1>
+            <h2 class="visually-hidden">Возможности Приложение</h2>
             <ul class="suggestion__title-list">
                 <li class="title-list__item">Устали о серости мегаполиса?</li>
                 <li class="title-list__item">Нам есть, что вам предложить!</li>
             </ul>
-            <ul class="suggestion__possibility-list">
-                <li class="possibility-list__item">
-                    <span class="suggestion__title-item">Поднимает настроение</span>
-                    <p class="suggestion__title-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li class="possibility-list__item">
-                    <span class="suggestion__title-item">Меняет мир вокруг</span>
-                    <p class="suggestion__title-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="possibility-list__item">
-                    <span class="suggestion__title-item">Заводит новых друзей</span>
-                    <p class="suggestion__title-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-            </ul>
-            <img class="suggestion__photo" src="http://placehold.it/150x100" alt="Изображение смартфона">   
+            <div class="suggestion__background"></div>
+            <div class="suggestion__wrapper">
+                <ul class="suggestion__possibility-list">
+                    <li class="possibility-list__item">
+                        <span class="suggestion__title-item">Поднимает настроение</span>
+                        <p class="suggestion__title-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                    </li>
+                    <li class="possibility-list__item">
+                        <span class="suggestion__title-item">Меняет мир вокруг</span>
+                        <p class="suggestion__title-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                    </li>
+                    <li class="possibility-list__item">
+                        <span class="suggestion__title-item">Заводит новых друзей</span>
+                        <p class="suggestion__title-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                    </li>
+                </ul>
+                <div class="suggestion__photo">
+                    <img src="./source/dist/iphone-5-hi-everyone.png" alt="Изображение смартфона"  width="160" height="330">   
+                </div>
+            </div>
         </section>
 
         <section class="page-content feedback">
-            <div class="feedback__wrapper slider">
-            <h1 class="visually-hidden">Отзывы пользователей</h1>
-            <ul class="feedback__list slider__list">
-                <li class="feedback__item">
-                    <span class="feedback__user-name">Николай Петров</span>
-                    <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </li>
-                <li class="feedback__item">
-                    <span class="feedback__user-name">Николай Петров</span>
-                    <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </li>
-                <li class="feedback__item">
-                    <span class="feedback__user-name">Николай Петров</span>
-                    <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                </li>
-            </ul>
-            <p class="feedback__toggles slider__toggles">
-                <button class="slider__toggle slider__toggle--active" type="button">1</button>
-                <button class="slider__toggle" type="button">2</button>
-                <button class="slider__toggle" type="button">3</button>
-            </p>
+            <div class="feedback__wrapper">
+                <h2 class="visually-hidden">Отзывы пользователей</h2>
+                <ul class="feedback__list">
+                    <li class="feedback__item feedback__item--active">
+                        <span class="feedback__user-name">Николай Петров</span>
+                        <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                    <li class="feedback__item">
+                        <span class="feedback__user-name">Николай Петров</span>
+                        <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                    <li class="feedback__item">
+                        <span class="feedback__user-name">Николай Петров</span>
+                        <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                    </li>
+                </ul>
+                <ul class="feedback__toggles slider__toggles">
+                    <li class="slider__toggle slider__toggle--active">    
+                        <input class="visually-hidden" id="slider__toggle-1" type="checkbox" />
+                        <label for="slider__toggle-1"></label>
+                    </li>
+                    <li class="slider__toggle">
+                        <input class="visually-hidden" id="slider__toggle-2" type="checkbox" />
+                        <label  for="slider__toggle-2"></label>
+                    </li>
+                    <li class="slider__toggle">
+                        <input class="visually-hidden" id="slider__toggle-3" type="checkbox" />
+                        <label for="slider__toggle-3"></label>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section class="page-content programs">
+            <h2 class="visually-hidden">Варианты программ</h2>
             <div class="programs__wrapper slider">
-            <h1 class="visually-hidden">Отзывы пользователей</h1>
-            <ul class="programs__list slider__list">
-                <li class="programs__item">
-                    <table>
+                <div class="table__wrapper">
+                    <table class="programs__list">
                         <tr>
-                            <span class="programs__version">Стандарт</span>
-                            <span class="programs__price"></span>
+                            <th class="programs__title">
+                                <div class="programs__version">Лайт</div>
+                                <div class="programs__price">1,99 USD</div>
+                            </th>
+                            <th class="programs__title programs__title--hit">
+                                <div class="programs__version">Стандарт</div>
+                                <div class="programs__price">3,99 USD</div>
+                            </th>
+                            <th class="programs__title">
+                                <div class="programs__version">Премиум</div>
+                                <div class="programs__price">7,99 USD</div>
+                            </th>
+                        </tr> 
+                        <tr>
+                            <td class="programs__property programs__property--check">
+                                Розовый фильтр
+                            </td>
+                            <td class="programs__property programs__property--check">
+                                Розовый фильтр
+                            </td>
+                            <td class="programs__property programs__property--check">
+                                Розовый фильтр
+                            </td>
                         </tr>
-                        <tr class="programs__property programs__property--check">Розовый фильтр</tr>
-                        <tr class="programs__property programs__property--check">Смайлики</tr>
-                        <tr class="programs__property programs__property--cross">Комментарии</tr>
+                        <tr>
+                            <td class="programs__property programs__property--cross">
+                                Смайлики
+                            </td>
+                            <td class="programs__property programs__property--check">
+                                Смайлики
+                            </td>
+                            <td class="programs__property programs__property--check">
+                                Смайлики
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="programs__property programs__property--cross">
+                                Комментарии
+                            </td>
+                            <td class="programs__property programs__property--cross">
+                                Комментарии
+                            </td>
+                            <td class="programs__property programs__property--check">
+                                Комментарии
+                            </td>
+                        </tr>
                     </table>
-                </li>
-            </ul>
-            <p class="programs__toggles slider__toggles">
-                <button class="slider__toggle" type="button">1</button>
-                <button class="slider__toggle slider__toggle--active" type="button">2</button>
-                <button class="slider__toggle" type="button">3</button>
-            </p>
+                </div>  
+                
+                <ul class="programm__toggles slider__toggles">
+                    <li class="slider__toggle">    
+                        <input class="visually-hidden" id="slider__toggle-1" type="checkbox" />
+                        <label for="slider__toggle-1"></label>
+                    </li>
+                    <li class="slider__toggle slider__toggle--active">
+                        <input class="visually-hidden" id="slider__toggle-2" type="checkbox" />
+                        <label  for="slider__toggle-2"></label>
+                    </li>
+                    <li class="slider__toggle">
+                        <input class="visually-hidden" id="slider__toggle-3" type="checkbox" />
+                        <label for="slider__toggle-3"></label>
+                    </li>
+                </ul>
             </div>
         </section>        
     </main>
     <footer class="page-footer">
-        <h1 class="visually-hidden">Контакты</h1>
+        <h2 class="visually-hidden">Контакты</h2>
         <div class="page-footer__info">
             <p class="info-title">
                 Остались вопросы?<br>
                 Свяжитесь с нами!
             </p>
-            <div class="page-footer__contacts">
-                <ul class="page-footer__contacts-list">
+            <div class="footer__contacts">
+                <ul class="footer__contacts-list">
                     <li class="contacts-list__item">
                         <p class="contacts-list__item-title">
                             Звоните:<br>
@@ -135,7 +195,7 @@
                     <li class="contacts-list__item">
                         <p class="contacts-list__item-title">
                             Пишите:<br>
-                            <a class="item-title__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+                            <a class="item-title__mail" href="mailto:mail@test.ru">mail@test.ru</a>
                         </p>
                     </li>
                     <li class="contacts-list__item">
@@ -148,9 +208,11 @@
             </div>
         </div>
         <div class="page-footer__map">
-            <!-- <iframe src="" frameborder="0"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6504811988172!2d30.323001801099878!3d59.93874738439194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587211287141!5m2!1sru!2sru"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
     </footer>
+
+    <script src="/source/js/slider.js"></script>
 </body>
 
 </html>

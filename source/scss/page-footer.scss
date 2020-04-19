@@ -1,5 +1,108 @@
-body{
-    padding: 0;
+$width-s-max: 576px;     
+$width-m-max: 768px;      
+$width-l-max: 992px;      
+$width-xl-max: 1200px;   
 
-    background: hsl(192, 71%, 80%);
+.page-footer{
+    .info-title{
+        margin: 0;
+        padding: 0;
+
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+
+        color: rgba(40, 54, 69, 0.7);
+        text-shadow: 0 0 1px rgba(40, 54, 69, 0.4);
     }
+    .footer__contacts{
+        margin-top: 40px;
+        margin-bottom: 40px;
+            
+        .footer__contacts-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            .contacts-list__item{
+                flex-basis: 230px;
+
+                .contacts-list__item-title{
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 24px;
+
+                    color: rgba(40,54,69,.9);
+                    text-shadow: 0 0 1px rgba(40, 54, 69, 0.4);
+
+                    text-align: center;
+                }
+
+                .item-title__phone,
+                .item-title__mail,
+                .item-title__adress{
+                    font-size: 24px;
+                    font-weight: 300;
+                    line-height: 30px;
+                    text-decoration: none;
+
+                    color: #d22856;
+                }
+            }
+
+            .contacts-list__item:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    iframe{
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .page-footer__map{
+        position: relative;
+
+        width: 100%;
+        height: max-content;
+
+        overflow: hidden;
+    }
+}
+
+@media (max-width: $width-s-max) {
+
+    .page-footer {
+        .page-footer__map{
+            height: 199px;
+        }
+
+        .page-footer__map::before,
+        .page-footer__map::after{
+            content: "";
+
+            position: absolute;
+            top: -27px;
+            left: 50%;
+
+            width: 55%;
+            height: 30%;
+
+
+            transform: rotate(-10deg);
+            background-color: #ffffff;
+        }
+
+        .page-footer__map::after{
+            transform: scale(-1,1) rotate(-10deg);
+            left: 0;
+        }
+    }   
+}
