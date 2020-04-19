@@ -5,14 +5,15 @@ const   gulp = require('gulp'),
         imagemin = require('gulp-imagemin'),
         imageminGuetzli = require('imagemin-guetzli'),
         imageminMozjpeg = require('imagemin-mozjpeg'),
-        imageminPngquant = require('imagemin-pngquant');
+        imageminPngquant = require('imagemin-pngquant'),
+        autoprefixer = require('gulp-autoprefixer');
 
 function style () {
     return gulp.src('./source/scss/**/*.scss')
     .pipe(sass())
     .pipe(cleanCSS())
     .pipe(gulp.dest('./source/css'))
-    
+
     .pipe(browserSync.stream());
 }
 
