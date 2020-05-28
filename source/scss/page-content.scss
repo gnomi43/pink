@@ -1,9 +1,8 @@
 $backgrounde-color-dark-blue: #283645;
 
-$width-s-max: 576px;     
-$width-m-max: 768px;      
-$width-l-max: 992px;      
-$width-xl-max: 1200px;    
+$width-s-min: 650px;      
+$width-m-min: 992px;      
+$width-l-min: 1200px;      
 
 @mixin text-options($x, $m, $m-top, $m-bot) {
     display: block;
@@ -16,8 +15,13 @@ $width-xl-max: 1200px;
 
 .page-content{
     margin-bottom: 45px;
-
+    overflow: hidden;
         &.application{
+            padding-top: 35px;
+            padding-bottom: 15px;
+
+            height: min-content;
+
             background-color: #1d2631;
 
             .application__down{
@@ -49,7 +53,6 @@ $width-xl-max: 1200px;
             }
         }
 
-
         ul{
             margin: 0;
             padding: 0;
@@ -64,13 +67,14 @@ $width-xl-max: 1200px;
             font-weight: 400;
             color: $backgrounde-color-dark-blue;
             text-align: center;
-
-
-
         }
         
         .suggestion__photo>img{
             display: block;
+        }
+
+        .effect{
+            display: none;
         }
 
         .feedback__list{
@@ -79,14 +83,30 @@ $width-xl-max: 1200px;
 
             list-style: none;
 
-            .feedback__user-name{
-                display: block;
+            .feedback__user-title{
 
-                font-size: 18px;
-                font-weight: 700;
-                line-height: 30px;
+                .user-title__name,
+                .user-title__position{
+                    margin: 0 auto;
 
-                color: #000000;
+                    width: fit-content;
+
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 25px;
+
+                    color: #000000;
+                }
+
+                .user-title__position{
+                    display: none;
+                    
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 30px;
+
+                    color: #283645;
+                }
             }
 
             .feedback__user-feedback{
@@ -104,7 +124,11 @@ $width-xl-max: 1200px;
             }
 
             &>.feedback__item--active{
-                display: block;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                min-height: 260px;
             }
         }
 
@@ -145,13 +169,8 @@ $width-xl-max: 1200px;
             border: 3px solid $backgrounde-color-dark-blue;
         }
         
-    @media (max-width: $width-s-max) {
-
         &.application{
-            padding-top: 35px;
-            padding-bottom: 15px;
 
-            height: min-content;
 
             .application__down{
                 height: 55px;
@@ -191,7 +210,7 @@ $width-xl-max: 1200px;
             }
         }
 
-        .suggestion__wrapper{
+        .suggestion__background{
             position: relative;
 
             margin-bottom: 50px;
@@ -199,60 +218,58 @@ $width-xl-max: 1200px;
             font-family: "myriad pro", Arial , sans-serif;
 
             background-color: #f2f2f2;
-        
-            .suggestion__possibility-list{
-                margin-bottom: 45px;
-                .suggestion__title-item{
-                    @include text-options($x: max-content, $m: 0 auto, $m-top: 40px, $m-bot: 0);
 
-                    font-size: 20px;
-                    font-weight: 700;
-                    line-height: 10px;
+            .suggestion__wrapper{
 
-                    color: $backgrounde-color-dark-blue;
+                .suggestion__possibility-list{
+                    margin-bottom: 45px;
+                    .suggestion__title-item{
+                        @include text-options($x: max-content, $m: 0 auto, $m-top: 40px, $m-bot: 0);
+
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 10px;
+
+                        color: $backgrounde-color-dark-blue;
+                    }
+
+                    .suggestion__title-info{
+                        @include text-options($x: 80%, $m: 0 auto, $m-top: 20px, $m-bot: 0);
+
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+
+                        color: #434f5c;
+                    }
                 }
+                
+                .suggestion__photo{
+                    display: block;
+                    overflow: hidden;
 
-                .suggestion__title-info{
-                    @include text-options($x: 80%, $m: 0 auto, $m-top: 20px, $m-bot: 0);
+                    width: 175px;
+                    height: 310px;
 
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 24px;
-                    text-align: center;
+                    background: url("/source/dist/iphone-5-hi-everyone.png") no-repeat;
+                    background-size: cover;
 
-                    color: #434f5c;
+                    margin: 0 auto;
                 }
-            }
-            
-            .suggestion__photo{
-                display: block;
-                overflow: hidden;
-
-                width: 160px;
-                height: 290px;
-
-                margin: 0 auto;
             }
         }
 
-        .suggestion__wrapper::before{
+        .suggestion__background::before{
             content: "";
             position: absolute;
-            top: 0;
-            display: block;
-            width: 100%;
-            box-shadow: 0px 0px 0px 80px #f2f2f2;
-            transform: rotate(-5deg);
+            top: -100px;
             z-index: -1;
+            border-top: 100px solid transparent;
+            border-right: 800px solid #f2f2f2;
         }
 
         .feedback__list{
-
-            .feedback__user-name{
-                width: fit-content;
-                
-                margin: 0 auto;
-            }
 
             .feedback__user-feedback{
                 margin-bottom: 30px;
@@ -261,13 +278,6 @@ $width-xl-max: 1200px;
                 text-align: center;
             }
 
-            &>.feedback__item{
-                display: none;
-            }
-
-            &>.feedback__item--active{
-                display: block;
-            }
         }
 
         .feedback__toggles{
@@ -441,10 +451,217 @@ $width-xl-max: 1200px;
             content: "";
             position: absolute;
             display: block;
-            width: 100%;
-            box-shadow: 0px 0px 0px 80px #f2f2f2;
-            transform: rotate(-5deg);
+            top: -100px;
             z-index: -1;
+            border-top: 100px solid transparent;
+            border-right: 800px solid #f2f2f2;
+        }
+}
+
+@media (min-width: $width-s-min){
+    .page-content{
+        .application{
+            position: absolute;
+
+            top: 280px;
+            width: 400px;
+
+            background-color: transparent;
+
+            .application__down{
+                width: 85%;
+
+                font-size: 19px;
+            }
+        
+            .application__info{
+
+                width: 85%;
+                font-size: 19px;
+
+                color: #ffffff;
+            }
+
+            &::before{
+                content: "Взгляните на жизнь иначе!";
+
+                position: absolute;
+                top: -160px;
+                left: 50%;
+
+                display: block;
+                margin-left: -100px;
+
+                width: 200px;
+
+                font-size: 40px;
+                font-weight: 300;
+                text-align: center;
+                color: #ffffff;
+
+            }
+        }
+        .suggestion__title-list{
+            margin-top: 45px;
+
+            .title-list__item{
+                margin-top: 0;
+
+                width: 575px;
+
+                font-family: 'Open Sans', Arial, sans-serif;
+                font-size: 40px;
+                font-weight: 300;
+                text-shadow: 0 0 1px;
+            }
+        }
+        .suggestion__background{
+            .suggestion__wrapper{
+                display: flex;
+
+                margin-bottom: 0;
+                margin: 0 auto;
+
+                width: 850px;
+
+                .suggestion__possibility-list{
+                    order: 2;
+
+                    margin: 0;
+
+                    width: 550px;
+
+                    .possibility-list__item{
+                        margin-bottom: 30px;
+                        width: 400px;
+
+                        .suggestion__title-item{
+                            margin: 0;
+                            margin-bottom: 25px;
+
+                            font-size: 24px;
+                        }
+
+                        .suggestion__title-info{
+                            margin: 0;
+
+                            width: 100%;
+
+                            font-size: 18px;
+                            text-align: left;
+                        }
+                    }
+                }
+                .suggestion__photo{
+                    order: 1;
+
+                    margin-left: 30px;
+                    margin-top: -80px;
+
+                    width: 375px;
+                    height: 480px;
+                    
+                    background: url("/source/dist/iphone6-table.png");
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        .effect{
+            display: flex;
+            justify-content: flex-end;
+
+            min-height: 310px;
+
+            &__info{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                margin: auto 0;
+                margin-right: 100px;
+
+                width: 310px;
+                min-height: 230px;
+
+                &::before{
+                    content: "";
+
+                    position: absolute;
+                    top: -20px;
+                    left: -285px;
+                    
+                    width: 240px;
+                    height: 275px;
+
+                    background: no-repeat url("../dist/effect-24.png");
+                    background-position: center;
+                }
+
+                &-title{
+                    font-size: 30px;
+                    font-weight: 700;
+                    line-height: 36px;
+
+                    color: #000000;
+                }
+
+                &-main,
+                &-link{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                    color: #000000;
+                }
+
+                &-link{
+                    color: #d22856;
+                }
+            }
+        }
+        .feedback{
+            .feedback__list{
+                .feedback__item{
+                    min-height: 180px;
+
+                    margin-bottom: 40px;
+
+                    .feedback__user-title{
+                        display: flex;
+                        flex-direction: column;
+                        order: 1;
+
+                        justify-content: center;
+
+                        .user-title__position{
+                            display: block;
+                        }
+                    }
+
+                    .feedback__user-feedback{
+                        padding: 0;
+
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .programs{
+            .programs__wrapper{
+                .table__wrapper{
+                    .programs__list{
+                        width: 100%;
+
+                        margin-top: 40px;
+                        margin-bottom: 60px;
+                    }
+                }
+
+                .programm__toggles{
+                    display: none;
+                }
+            }
         }
     }
 }

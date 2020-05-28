@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./source/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>PINK</title>
 </head>
 
@@ -14,10 +14,11 @@
     <header class="page-header">
         <nav class="header-nav">
             <div class="header-nav_wrapper">
-                <img src="./source/dist/logotype-white-mobile.svg копия.png" alt="Логотип компании" class="page-header__logo-image" width="75" height="24">
-                
+                <div class="nav__logo-wrapper">
+                    <a href="/">PINK</a>
+                </div>
                 <div class="burger-menu">
-                    <input class="visually-hidden" id="menu__toggle" type="checkbox" />
+                    <input class="visually-hidden" id="menu__toggle" type="checkbox"/>
                     <label class="menu__btn-burger" for="menu__toggle">
                       <span></span>
                     </label>
@@ -44,30 +45,41 @@
                 </ul>
                 <p class="application__info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
         </section>
-            <h2 class="visually-hidden">Возможности Приложение</h2>
+        <section class="page-content application-preview">
+            <h2 class="visually-hidden">Возможности приложение</h2>
             <ul class="suggestion__title-list">
                 <li class="title-list__item">Устали о серости мегаполиса?</li>
                 <li class="title-list__item">Нам есть, что вам предложить!</li>
             </ul>
-            <div class="suggestion__background"></div>
-            <div class="suggestion__wrapper">
-                <ul class="suggestion__possibility-list">
-                    <li class="possibility-list__item">
-                        <span class="suggestion__title-item">Поднимает настроение</span>
-                        <p class="suggestion__title-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                    </li>
-                    <li class="possibility-list__item">
-                        <span class="suggestion__title-item">Меняет мир вокруг</span>
-                        <p class="suggestion__title-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                    </li>
-                    <li class="possibility-list__item">
-                        <span class="suggestion__title-item">Заводит новых друзей</span>
-                        <p class="suggestion__title-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                    </li>
-                </ul>
-                <div class="suggestion__photo">
-                    <img src="./source/dist/iphone-5-hi-everyone.png" alt="Изображение смартфона"  width="160" height="330">   
+            <div class="suggestion__background">
+                <div class="suggestion__wrapper">
+                    <ul class="suggestion__possibility-list">
+                        <li class="possibility-list__item">
+                            <span class="suggestion__title-item">Поднимает настроение</span>
+                            <p class="suggestion__title-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                        </li>
+                        <li class="possibility-list__item">
+                            <span class="suggestion__title-item">Меняет мир вокруг</span>
+                            <p class="suggestion__title-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                        </li>
+                        <li class="possibility-list__item">
+                            <span class="suggestion__title-item">Заводит новых друзей</span>
+                            <p class="suggestion__title-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                        </li>
+                    </ul>
+                    <div class="suggestion__photo">
+
+                    </div>
                 </div>
+            </div>  
+        </section>
+
+        <section class="page-content effect">
+
+            <div class="effect__info">
+                <div class="effect__info-title">Эффект<br> на 24 часа!</div>
+                <div class="effect__info-main">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</div>
+                <a href="#" class="effect__info-link">Узнать больше об исследовании</a>
             </div>
         </section>
 
@@ -76,16 +88,25 @@
                 <h2 class="visually-hidden">Отзывы пользователей</h2>
                 <ul class="feedback__list">
                     <li class="feedback__item feedback__item--active">
-                        <span class="feedback__user-name">Николай Петров</span>
-                        <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <div class="feedback__user-title">
+                            <div class="user-title__name">Николай Петров</div>
+                            <div class="user-title__position">25 лет, водитель трамвая</div>
+                        </div>
+                        <div class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
                     </li>
                     <li class="feedback__item">
-                        <span class="feedback__user-name">Николай Петров</span>
-                        <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <div class="feedback__user-title">
+                            <div class="user-title__name">Николай Петров</div>
+                            <div class="user-title__position">25 лет, водитель трамвая</div>
+                        </div>
+                        <div class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
                     </li>
                     <li class="feedback__item">
-                        <span class="feedback__user-name">Николай Петров</span>
-                        <p class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <div class="feedback__user-title">
+                            <div class="user-title__name">Николай Петров</div>
+                            <div class="user-title__position">25 лет, водитель трамвая</div>
+                        </div>
+                        <div class="feedback__user-feedback">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</div>
                     </li>
                 </ul>
                 <ul class="feedback__toggles slider__toggles">
